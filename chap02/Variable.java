@@ -43,3 +43,18 @@ class Variable4 {
         System.out.println(x);
     }
 }
+
+// 3. 변수타입
+class Variable5 {
+    public static void main(String[] args) {
+        int x = 100;
+        double pi = 3.14;
+        char ch = 'a';
+        String str = "abc";
+
+        System.out.println(x);
+        System.out.println(pi);
+        System.out.println(ch);
+        System.out.println(str);
+    }
+}
