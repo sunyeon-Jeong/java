@@ -31,3 +31,15 @@ class Variable3 {
         System.out.printf("num = %d%n", num);
     }
 }
+
+// 2. 변수선언
+class Variable4 {
+    public static void main(String[] args) {
+        int x = 5;
+        System.out.println(x);
+
+        // 기존 x 값 지워짐
+        x = 10;
+        System.out.println(x);
+    }
+}
