@@ -58,3 +58,22 @@ class Variable5 {
         System.out.println(str);
     }
 }
+
+// 4. 문자열결합
+class Variable6 {
+    public static void main(String[] args) {
+        String name = "Ja" + "va"; // Java
+        String str = name + 19; // Java19
+
+        System.out.println(name);
+        System.out.println(str);
+
+        // 숫자형 + 문자열 -> 문자열
+        System.out.println(22 + " ");
+        System.out.println(22 + "");
+
+        // 덧셈 순서에 따라 다른 결과값
+        System.out.println(20 + 2 + ""); // String 22
+        System.out.println("" + 2 + 2); // String 22
+    }
+}
