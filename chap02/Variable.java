@@ -77,3 +77,23 @@ class Variable6 {
         System.out.println("" + 2 + 2); // String 22
     }
 }
+
+// 5. 두 변수 값 바꾸기
+class Variable7 {
+    public static void main(String[] args) {
+        int x = 10, y = 5;
+
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+
+        // 1. x -> trans
+        int trans = x;
+        // 2. y -> x
+        x = y;
+        // 3. trans -> y
+        y = trans;
+
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+    }
+}
