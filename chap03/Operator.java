@@ -29,3 +29,18 @@ class Operator2 {
         System.out.println("j = ++i; 실행 후, i = " + i + " j = " + j);
     }
 }
+
+class Operator3 {
+    public static void main(String[] args) {
+        int i = 5, j = 5;
+
+        // 후위형 : i값 출력 -> 1증가
+        System.out.println(i++);
+
+        // 전위형 : j값 1 증가 -> 출력
+        System.out.println(++j);
+
+        // 한번 출력 후 -> i값 증가됨
+        System.out.println("i = " + i + " j = " + j);
+    }
+}
