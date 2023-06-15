@@ -44,3 +44,15 @@ class Operator3 {
         System.out.println("i = " + i + " j = " + j);
     }
 }
+
+class Operator4 {
+    public static void main(String[] args) {
+        int i = -10;
+        i = +i; // + 연산자 하는일 없음
+        System.out.println(i);
+
+        i = -10;
+        i = -i; // - 연산자 -> 부호변경
+        System.out.println(i);
+    }
+}
