@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // 1. 연산자결합규칙
 class Operator1 {
     public static void main(String[] args) {
@@ -146,5 +148,30 @@ class Operator11 {
         // equals() -> 객체가 달라도 내용만 같으면 True
         boolean result3 = str2.equals(str3);
         System.out.println(result3);
+    }
+}
+
+// 10. 논리연산자
+class Operator12 {
+    public static void main(String[] args) {
+        // 사용자입력 받기 위한 객체생성
+        Scanner scanner = new Scanner(System.in);
+
+        char ch = ' ';
+
+        System.out.printf("문자를 하나 입력하시오 >>>");
+
+        String input = scanner.nextLine();
+
+        // input -> 문자로 형변환
+        ch = input.charAt(0);
+
+        if ('0' <= ch && ch <= '9') {
+            System.out.printf("입력하신 문자는 숫자입니다.%n");
+        }
+
+        if (('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z')) {
+            System.out.printf("입력하신 문자는 영문자입니다.%n");
+        }
     }
 }
