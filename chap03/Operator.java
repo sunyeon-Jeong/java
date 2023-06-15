@@ -176,7 +176,7 @@ class Operator12 {
     }
 }
 
-//11. 논리부정연산자
+// 11. 논리부정연산자
 class Operator13 {
     public static void main(String[] args) {
         boolean b = true;
@@ -186,5 +186,17 @@ class Operator13 {
         System.out.printf("!b = %b%n", !b);
         System.out.printf("!!b = %b%n", !!b);
         System.out.printf("!!!b = %b%n", !!!b);
+    }
+}
+
+// 12. 조건연산자
+class Operator14 {
+    public static void main(String[] args) {
+        int num1 = 5, num2 = 7;
+        int result;
+
+        result = (num1 - num2 > 0) ? num1 : num2;
+
+        System.out.println("두 정수 중, 더 큰 수 : " + result);
     }
 }
