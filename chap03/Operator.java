@@ -69,3 +69,16 @@ class Operator5 {
         System.out.println("d = " + d);
     }
 }
+
+// 5. 사칙연산자
+class Operator6 {
+    public static void main(String[] args) {
+        int a = 10, b = 4;
+
+        System.out.println(a + b); // 덧셈
+        System.out.println(a - b); // 뺄셈
+        System.out.println(a * b); // 곱셈
+        System.out.println(a / b); // 나눗셈
+        System.out.println(a / (float)b); // 2.5 자동형변환 -> 실수형
+    }
+}
