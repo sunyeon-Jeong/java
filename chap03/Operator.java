@@ -113,3 +113,17 @@ class Operator9 {
         System.out.println(shortPi);
     }
 }
+
+// 8. 나머지연산자
+class Operator10 {
+    public static void main(String[] args) {
+        int x = 10, y = 8;
+
+        System.out.printf("%d을 %d로 나누면, %n", x, y);
+        System.out.printf("몫은 %d이고, 나머지는 %d입니다.%n", x / y, x % y);
+
+        // 나머지연산자 -> 부호 무시하고 결과출력
+        System.out.println(-10 % 8);
+        System.out.println(10 % 8);
+    }
+}
