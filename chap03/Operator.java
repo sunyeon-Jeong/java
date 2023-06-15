@@ -127,3 +127,24 @@ class Operator10 {
         System.out.println(10 % 8);
     }
 }
+
+// 9. 문자열비교
+class Operator11 {
+    public static void main(String[] args) {
+        String str1 = new String("mallang");
+        String str2 = "chunsik";
+        String str3 = "chunsik";
+
+        // 대소문자 구별
+        boolean result1 = str1.equals("mallang");
+        System.out.println(result1);
+        // 대소문자 구별X
+        boolean result2 = str2.equalsIgnoreCase("Chunsik");
+        System.out.println(result2);
+
+        // (==) -> 객체가 다르면 False
+        // equals() -> 객체가 달라도 내용만 같으면 True
+        boolean result3 = str2.equals(str3);
+        System.out.println(result3);
+    }
+}
