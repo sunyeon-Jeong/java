@@ -82,3 +82,24 @@ class Operator6 {
         System.out.println(a / (float)b); // 2.5 자동형변환 -> 실수형
     }
 }
+
+// 6. 산술변환
+class Operator7 {
+    public static void main(String[] args) {
+        System.out.println(5 / 2);
+        System.out.println(5 / (float)2);
+    }
+}
+
+class Operator8 {
+    public static void main(String[] args) {
+        byte a = 10;
+        byte b = 30;
+
+        // a, b -> int로 변환 -> byte c에 저장 불가 -> 형 명시 필수
+        byte c = (byte)(a * b);
+
+        // 데이터손실 issue
+        System.out.println(c);
+    }
+}
