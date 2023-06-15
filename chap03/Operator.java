@@ -45,6 +45,7 @@ class Operator3 {
     }
 }
 
+// 3. 부호연산자
 class Operator4 {
     public static void main(String[] args) {
         int i = -10;
@@ -54,5 +55,17 @@ class Operator4 {
         i = -10;
         i = -i; // - 연산자 -> 부호변경
         System.out.println(i);
+    }
+}
+
+// 4. 형변환연산자
+class Operator5 {
+    public static void main(String[] args) {
+        double d = 85.4;
+        int score = (int) d;
+
+        // 형변환 -> 일시적 (피연산자 변수값 그대로 유지)
+        System.out.println("score = " + score);
+        System.out.println("d = " + d);
     }
 }
