@@ -135,3 +135,16 @@ class ConditionalStatement6 {
         }
     }
 }
+
+// 7. Math.random() 난수
+class ConditionalStatement7 {
+    public static void main(String[] args) {
+        int num = 0;
+
+        for (int i = 1; i <= 5; i++) {
+            // 1이상 7이하 난수생성 -> 5번 반복
+            num = (int)(Math.random() * 6) + 1;
+            System.out.println(num);
+        }
+    }
+}
