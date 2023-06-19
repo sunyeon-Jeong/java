@@ -107,3 +107,22 @@ class Iteration7 {
         System.out.println("정답입니다!");
     }
 }
+
+// 5. break문
+class Iteration8 {
+    public static void main(String[] args) {
+        int sum = 0;
+        int i = 0;
+
+        while (true) { // 무한반복
+            if (sum > 100) // 조건문 + break문 -> 무한반복 벗어남
+                break;
+
+            ++i;
+            sum += i;
+        }
+
+        System.out.println("i = " + i);
+        System.out.println("sum = " + sum);
+    }
+}
