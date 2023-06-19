@@ -44,3 +44,15 @@ class Iteration4 {
         }
     }
 }
+
+// 3. while문
+class Iteration5 {
+    public static void main(String[] args) {
+        int i = 5; // 초기화
+
+        while (i-- != 0) { // 조건식 (후위형)
+            // 조건식에서 평가된 후 -> 1감소하여 i 출력됨
+            System.out.println(i + " - I can do it!");
+        }
+    }
+}
