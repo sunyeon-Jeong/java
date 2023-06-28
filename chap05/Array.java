@@ -80,3 +80,22 @@ class Array3 {
         System.out.println("최소값 : " + min);
     }
 }
+
+// #2_3. 섞기(shuffle)
+class Array4 {
+    public static void main(String[] args) {
+        int[] numArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        // 숫자형 배열 -> 문자열로 출력
+        System.out.println(Arrays.toString(numArray));
+
+        for (int i = 0; i < 100; i++) {
+            int num = (int)(Math.random() * 10); // 0 ~ 9까지 난수
+            int tmp = numArray[0];
+            numArray[0] = numArray[num];
+            numArray[num] = tmp;
+        }
+
+        System.out.println(Arrays.toString(numArray));
+    }
+}
