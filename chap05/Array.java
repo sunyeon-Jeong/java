@@ -99,3 +99,28 @@ class Array4 {
         System.out.println(Arrays.toString(numArray));
     }
 }
+
+// #2_4. 로또번호 만들기
+class Array5 {
+    public static void main(String[] args) {
+        int[] ball = new int[45]; // 45개의 정수값 배열
+
+        for (int i = 0; i < ball.length; i++) {
+            ball[i] = i + 1;
+        }
+
+        int tmp1 = 0; // 두  값을 변경할때 사용
+        int tmp2 = 0; // 난수에 사용
+
+        for (int i = 0; i <6; i++) {
+            tmp2 = (int)(Math.random() * 45); // 0 ~ 44 난수
+            tmp1 = ball[i];
+            ball[i] = ball[tmp2];
+            ball[tmp2] = tmp1;
+        }
+
+        for (int i = 0; i < 6; i++) {
+            System.out.printf("ball[%d] = %d%n", i, ball[i]);
+        }
+    }
+}
