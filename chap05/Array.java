@@ -36,3 +36,25 @@ class Array1 {
         System.out.println(chArray);
     }
 }
+
+// #2. 배열의 활용
+// #2_1. 총합과 평균
+class Array2 {
+    public static void main(String[] args) {
+        int sum = 0; // 총합변수
+        float average = 0f; // 평균변수 (float -> 접미사 f)
+
+        int[] score = {100, 88, 100, 100, 90};
+
+        // 총합변수 <- 배열요소 넣기
+        for (int i = 0; i < score.length; i++) {
+            sum += score[i];
+        }
+
+        // 평균값 구하기
+        average = sum / (float)score.length; // average float type에 맞춰 형변환
+
+        System.out.println("총합 : " + sum);
+        System.out.println("평균 : " + average);
+    }
+}
