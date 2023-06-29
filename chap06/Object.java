@@ -26,3 +26,23 @@ class Object1 {
         System.out.println("현재 채널은 " + t.channel + "입니다.");
     }
 }
+
+class Object2 {
+    public static void main(String[] args) {
+        // 객체생성
+        Tv t1 = new Tv();
+        Tv t2 = new Tv();
+
+        // 객체 생성 후 -> 기본 초기화
+        System.out.println("t1의 channel 값 : " + t1.channel);
+        System.out.println("t2의 channel 값 : " + t2.channel);
+
+        // 객체 멤버변수 재초기화
+        // 객체 멤버변수 : 서로 다른 값 유지가능
+        t1.channel = 10;
+        t2.channelUp();
+
+        System.out.println("t1의 현재 channel 값 : " + t1.channel);
+        System.out.println("t2의 현재 channel 값 : " + t2.channel);
+    }
+}
