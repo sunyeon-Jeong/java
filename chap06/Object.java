@@ -13,3 +13,16 @@ class Tv {
     void channelUp() {++channel;}
     void channelDown() {--channel;}
 }
+
+class Object1 {
+    public static void main(String[] args) {
+        // 객체생성
+        Tv t = new Tv();
+
+        // 객체사용
+        t.channel = 7; // Tv 객체 t -> 멤버변수 초기화
+        t.channelDown(); // Tv 객체 t -> 메서드 사용
+
+        System.out.println("현재 채널은 " + t.channel + "입니다.");
+    }
+}
