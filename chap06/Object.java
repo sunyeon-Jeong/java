@@ -46,3 +46,13 @@ class Object2 {
         System.out.println("t2의 현재 channel 값 : " + t2.channel);
     }
 }
+
+// #2. 클래스변수와 인스턴스변수
+// Card 클래스
+class Card {
+    String kind; // 멤버변수_인스턴스변수 (카드무늬)
+    int number; // 멤버변수_인스턴스변수 (숫자)
+
+    static int width = 100; // 멤버변수_클래스변수
+    static int height = 250; // 멤버변수_클래스변수
+}
