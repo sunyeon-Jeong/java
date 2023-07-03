@@ -170,3 +170,8 @@ class Object6 {
         System.out.println("change() : x = " + x);
     }
 }
+
+// #6. 참조형매개변수
+class Data2 {
+    int x; // 멤버변수(인스턴스변수)
+}
