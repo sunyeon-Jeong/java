@@ -146,5 +146,27 @@ class Object5 {
 
 // #5. 기본형매개변수
 class Data {
-    int x; // 멤버변수
+    int x; // 멤버변수(인스턴스)
+}
+
+class Object6 {
+    public static void main(String[] args) {
+        // 객체생성
+        Data data = new Data();
+
+        // 인스턴스변수 초기화
+        data.x = 10;
+        System.out.println("main() : x = " + data.x);
+
+        change(data.x); // 인스턴스변수 값 10 자치게 복사되어 전달됨
+
+        System.out.println("After change(data.x)");
+        System.out.println("main() : x = " + data.x);
+    }
+
+    // 메서드정의
+    static void change(int x) {
+        x = 1000;
+        System.out.println("change() : x = " + x);
+    }
 }
