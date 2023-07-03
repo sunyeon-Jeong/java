@@ -196,3 +196,29 @@ class Object7 {
         System.out.println("change() : x = " + data2.x);
     }
 }
+
+// #7. 참조형반환타입
+class Data3 {
+    int x;
+}
+
+class Object8 {
+    public static void main(String[] args) {
+        // 객체생성
+        Data3 data3_1 = new Data3();
+
+        // 인스턴스변수 초기화
+        data3_1.x = 10;
+
+        Data3 data3_2 = copy(data3_1);
+        System.out.println("data3_1.x = " + data3_1.x);
+        System.out.println("data3_2.x = " + data3_2.x);
+    }
+
+    // 메서드정의
+    static Data3 copy(Data3 data3_1) {
+        Data3 tmp = new Data3();
+        tmp.x = data3_1.x;
+        return tmp;
+    }
+}
