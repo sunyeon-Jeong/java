@@ -175,3 +175,24 @@ class Object6 {
 class Data2 {
     int x; // 멤버변수(인스턴스변수)
 }
+
+class Object7 {
+    public static void main(String[] args) {
+        // 객체생성
+        Data2 data2 = new Data2();
+
+        // 인스턴스변수 초기화
+        data2.x = 10;
+        System.out.println("main() : x = " + data2.x);
+
+        change(data2); // 객체 주소값이 전달
+        System.out.println("After change(data2)");
+        System.out.println("main() : x = " + data2.x);
+    }
+
+    // 메서드정의
+    static void change(Data2 data2) { // 참조형매개변수 (객체를 넣음)
+        data2.x = 1000;
+        System.out.println("change() : x = " + data2.x);
+    }
+}
