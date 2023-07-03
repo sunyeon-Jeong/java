@@ -88,3 +88,30 @@ class Object3 {
                 + card2.width + ", " + card2.height + ")");
     }
 }
+
+// #3. 메서드실행흐름
+class MyMath {
+    // 덧셈
+    long add(long a, long b) {
+        long result = a + b;
+        return result;
+    }
+
+    // 뺄셈
+    long subtract(long a, long b) {
+        long result = a - b;
+        return result;
+    }
+
+    // 곱셈
+    long multiply(long a, long b) {
+        long result = a * b;
+        return result;
+    }
+
+    // 나눗셈
+    double divide(double a, double b) {
+        double result = a / b;
+        return result;
+    }
+}
