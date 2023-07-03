@@ -222,3 +222,20 @@ class Object8 {
         return tmp;
     }
 }
+
+// #8. static메서드와 인스턴스메서드
+class MyMath2 {
+    long a, b;
+
+    // 멤버변수(인스턴스변수)만 사용해서 작업 -> 매개변수 불필요
+    long add() {return a + b;}
+    long subtract() {return a - b;}
+    long multiply() {return a * b;}
+    double divide() {return a / b;}
+
+    // 멤버변수(인스턴스변수)와 관계없이 매개변수만으로 작업
+    static long add(long a, long b) {return a + b;}
+    static long subtract(long a, long b) {return a - b;}
+    static long multiply(long a, long b) {return a * b;}
+    static double divide(long a, long b) {return a / (double) b;}
+}
