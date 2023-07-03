@@ -143,3 +143,8 @@ class Object5 {
 }
 // main 메서드 -(위에)-> println 메서드
 // println 메서드 종료 -> main 메서드 종료 -> 스택 Empty
+
+// #5. 기본형매개변수
+class Data {
+    int x; // 멤버변수
+}
