@@ -90,6 +90,7 @@ class Object3 {
 }
 
 // #3. 메서드실행흐름
+// #3_1. 메서드를 정의한 클래스
 class MyMath {
     // 덧셈
     long add(long a, long b) {
@@ -113,5 +114,23 @@ class MyMath {
     double divide(double a, double b) {
         double result = a / b;
         return result;
+    }
+}
+
+class Object4 {
+    public static void main(String[] args) {
+        // 객체생성
+        MyMath myMath = new MyMath();
+
+        // 객체 메서드 호출
+        long result1 = myMath.add(5L, 3L);
+        long result2 = myMath.subtract(5L, 3L);
+        long result3 = myMath.multiply(5L, 3L);
+        double result4 = myMath.divide(5, 3);
+
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result3);
+        System.out.println(result4);
     }
 }
