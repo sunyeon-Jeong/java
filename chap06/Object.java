@@ -225,17 +225,41 @@ class Object8 {
 
 // #8. static메서드와 인스턴스메서드
 class MyMath2 {
-    long a, b;
+    long a, b; // 인스턴스변수
 
     // 멤버변수(인스턴스변수)만 사용해서 작업 -> 매개변수 불필요
+    // 인스턴스메서드
     long add() {return a + b;}
     long subtract() {return a - b;}
     long multiply() {return a * b;}
     double divide() {return a / b;}
 
     // 멤버변수(인스턴스변수)와 관계없이 매개변수만으로 작업
+    // static(클래스)메서드
     static long add(long a, long b) {return a + b;}
     static long subtract(long a, long b) {return a - b;}
     static long multiply(long a, long b) {return a * b;}
     static double divide(long a, long b) {return a / (double) b;}
+}
+
+class Object9 {
+    public static void main(String[] args) {
+        // 클래스메서드 호출 (객체생성 없이 바로사용)
+        System.out.println(MyMath2.add(200L, 100L));
+        System.out.println(MyMath2.subtract(200L, 100L));
+        System.out.println(MyMath2.multiply(200L, 100L));
+        System.out.println(MyMath2.divide(200L, 100L));
+
+        // 인스턴스메서드 : 선 객체생성
+        MyMath2 myMath2 = new MyMath2();
+
+        // 객체의 인스턴스변수 -> 초기화
+        myMath2.a = 200L;
+        myMath2.b = 100L;
+
+        System.out.println(myMath2.add());
+        System.out.println(myMath2.subtract());
+        System.out.println(myMath2.multiply());
+        System.out.println(myMath2.divide());
+    }
 }
