@@ -134,3 +134,12 @@ class Object4 {
         System.out.println(result4);
     }
 }
+
+// #4. 호출스택
+class Object5 {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
+}
+// main 메서드 -(위에)-> println 메서드
+// println 메서드 종료 -> main 메서드 종료 -> 스택 Empty
