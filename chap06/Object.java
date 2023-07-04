@@ -379,3 +379,21 @@ class Object13 {
         Object13 object13_1 = new Object13();
     }
 }
+
+class Object14 {
+    // 명시적초기화
+    static int[] iArray = new int[10];
+
+    // 클래스초기화블럭
+    static {
+        for (int i = 0; i < iArray.length; i++) {
+            iArray[i] = (int) (Math.random() * 10) + 1;
+        }
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < iArray.length; i++) {
+            System.out.println("iArray[" + i + "] : " + iArray[i]);
+        }
+    }
+}
