@@ -282,3 +282,21 @@ class Object10 {
         Data_2 data_2 = new Data_2();
     }
 }
+
+// #10. 매개변수가있는생성자
+class Car {
+    // 멤버(인스턴스)변수
+    String color;
+    String gearType;
+    int door;
+
+    // 기본생성자
+    Car () {}
+
+    // 매개변수가있는생성자
+    Car(String color, String gearType, int door) {
+        color = color;
+        gearType = gearType;
+        door = door;
+    }
+}
