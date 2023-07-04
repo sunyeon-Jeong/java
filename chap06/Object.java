@@ -294,9 +294,25 @@ class Car {
     Car () {}
 
     // 매개변수가있는생성자
-    Car(String color, String gearType, int door) {
-        color = color;
-        gearType = gearType;
-        door = door;
+    Car(String c, String g, int d) {
+        color = c;
+        gearType = g;
+        door = d;
+    }
+}
+
+class Object11 {
+    public static void main(String[] args) {
+        // 기본생성자사용
+        Car car1 = new Car();
+        car1.color = "white";
+        car1.gearType = "auto";
+        car1.door = 4;
+
+        // 매개변수가있는생성자사용 -> 객체생성+초기화 동시에
+        Car car2 = new Car("white", "auto", 4);
+
+        System.out.println("car1 : " + car1.color + " " + car1.gearType + " " + car1.door);
+        System.out.println("car2 : " + car2.color + " " + car2.gearType + " " + car2.door);
     }
 }
