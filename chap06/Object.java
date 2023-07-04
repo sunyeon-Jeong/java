@@ -325,7 +325,7 @@ class Car2 {
     int door;
 
     // 생성자
-    public Car2(String color, String gearType, int door) {
+    Car2(String color, String gearType, int door) {
         this.color = color;
         this.gearType = gearType;
         this.door = door;
@@ -353,3 +353,4 @@ class Object12 {
         System.out.println("car2_2 : " + car2_2.color + " " + car2_2.gearType + " " + car2_2.door);
     }
 }
+
