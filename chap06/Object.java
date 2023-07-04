@@ -316,3 +316,26 @@ class Object11 {
         System.out.println("car2 : " + car2.color + " " + car2.gearType + " " + car2.door);
     }
 }
+
+class Car2 {
+    // 멤버(인스턴스)변수
+    String color;
+    String gearType;
+    int door;
+
+    // 생성자
+    public Car2(String color, String gearType, int door) {
+        this.color = color;
+        this.gearType = gearType;
+        this.door = door;
+    }
+
+    // 생성자호출
+    Car2() { // 위의 생성자 호출 -> 초기화
+        this("white", "auto", 4);
+    }
+
+    Car2(String color) { // 위의 생성자 호출 -> 초기화 (color만 따로 초기화)
+        this(color, "auto", 4);
+    }
+}
