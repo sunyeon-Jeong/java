@@ -263,3 +263,15 @@ class Object9 {
         System.out.println(myMath2.divide());
     }
 }
+
+// #9. 기본생성자
+class Data_1 {
+    int value; // 멤버(인스턴스)변수
+}
+
+class Data_2 {
+    int value; // 멤버(인스턴스)변수
+
+    // 기본생성자
+    Data_2() {}
+}
