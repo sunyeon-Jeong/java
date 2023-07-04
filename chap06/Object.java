@@ -317,6 +317,7 @@ class Object11 {
     }
 }
 
+// #11. 다른생성자호출-this()
 class Car2 {
     // 멤버(인스턴스)변수
     String color;
@@ -337,5 +338,18 @@ class Car2 {
 
     Car2(String color) { // 위의 생성자 호출 -> 초기화 (color만 따로 초기화)
         this(color, "auto", 4);
+    }
+}
+
+class Object12 {
+    public static void main(String[] args) {
+        // 생성자호출한 생성자사용
+        Car2 car2_1 = new Car2();
+
+        // 생성자호출한 생성자사용 (color 따로 초기화)
+        Car2 car2_2 = new Car2("blue");
+
+        System.out.println("car2_1 : " + car2_1.color + " " + car2_1.gearType + " " + car2_1.door);
+        System.out.println("car2_2 : " + car2_2.color + " " + car2_2.gearType + " " + car2_2.door);
     }
 }
