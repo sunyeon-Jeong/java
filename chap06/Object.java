@@ -354,3 +354,28 @@ class Object12 {
     }
 }
 
+// #12. 멤버변수초기화
+class Object13 {
+    // 클래스초기화블럭
+    static {
+        System.out.println("static {}");
+    }
+
+    // 인스턴스초기화블럭
+    {
+        System.out.println("{}");
+    }
+
+    // 생성자
+    Object13 () {
+        System.out.println("생성자");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Object13 object13 = new Object13();");
+        Object13 object13 = new Object13();
+
+        System.out.println("Object13 object13_1 = new Object13();");
+        Object13 object13_1 = new Object13();
+    }
+}
