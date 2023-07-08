@@ -73,6 +73,7 @@ class Object2 {
         point3D.y = 20;
         point3D.z = 30;
 
+        // 오버라이딩메서드 실행
         System.out.println(point3D.getLocation());
     }
 }
