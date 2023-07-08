@@ -39,3 +39,15 @@ class Object1 {
         smartTv.displayCaption("Hello, mallang!");
     }
 }
+
+// #2. 오버라이딩
+// 조상클래스
+class Point {
+    // 멤버(인스턴스)변수
+    int x, y;
+
+    // 멤버메서드
+    String getLocation() {
+        return "x : " + x + ", y : " + y; // 2차원
+    }
+}
