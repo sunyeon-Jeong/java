@@ -62,3 +62,17 @@ class Point3D extends Point {
         return "x : " + x + ", y : " + y + ", z : " + z; // 3차원 (자손에 맞게 변경)
     }
 }
+
+class Object2 {
+    public static void main(String[] args) {
+        // 객체생성
+        Point3D point3D = new Point3D();
+
+        // 객체멤버초기화
+        point3D.x = 10;
+        point3D.y = 20;
+        point3D.z = 30;
+
+        System.out.println(point3D.getLocation());
+    }
+}
