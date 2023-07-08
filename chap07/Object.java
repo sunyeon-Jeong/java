@@ -51,3 +51,14 @@ class Point {
         return "x : " + x + ", y : " + y; // 2차원
     }
 }
+
+// 자손클래스
+class Point3D extends Point {
+    // 자손 멤버(인스턴스)변수
+    int z;
+
+    // 메서드 오버라이딩
+    String getLocation() {
+        return "x : " + x + ", y : " + y + ", z : " + z; // 3차원 (자손에 맞게 변경)
+    }
+}
