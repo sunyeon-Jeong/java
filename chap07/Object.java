@@ -77,3 +77,18 @@ class Object2 {
         System.out.println(point3D.getLocation());
     }
 }
+
+// #3. 오버로딩과 오버라이딩
+class Parent {
+    void parentMethod() {}
+}
+
+class Child extends Parent {
+    void parentMethod() {} // 오버라이딩
+
+    void parentMethod(int i) {} // 오버로딩 (매개변수 type)
+
+    void childMethod() {}
+
+    void childMethod(int i) {} // 오버로딩 (매개변수 type)
+}
