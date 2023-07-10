@@ -119,7 +119,7 @@ class Object3 {
     }
 }
 
-// #5. 조상클래스-super()
+// #5. 조상클래스 생성자-super()
 class Point2 {
     // 조상클래스 -> 멤버(인스턴스)변수
     int x, y;
@@ -128,5 +128,16 @@ class Point2 {
     Point2 (int x, int y) {
         this.x = x;
         this.y = y;
+    }
+}
+
+class Point3D2 extends Point2 {
+    // 자손클래스 -> 멤버(인스턴스)변수
+    int z;
+
+    // 생성자
+    Point3D2 (int x, int y, int z) {
+        super(x, y); // 조상생성자 호출 Point2(int x, int y) {}
+        this.z = z;
     }
 }
