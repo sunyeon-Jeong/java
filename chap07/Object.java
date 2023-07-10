@@ -118,3 +118,15 @@ class Object3 {
         child2.method();
     }
 }
+
+// #5. 조상클래스-super()
+class Point2 {
+    // 조상클래스 -> 멤버(인스턴스)변수
+    int x, y;
+
+    // 생성자
+    Point2 (int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
