@@ -141,3 +141,11 @@ class Point3D2 extends Point2 {
         this.z = z;
     }
 }
+
+class Object4 {
+    public static void main(String[] args) {
+        // 객체생성
+        Point3D2 point3D2 = new Point3D2(1, 2, 3);
+        System.out.println("x = " + point3D2.x + ", y = " + point3D2.y + ", z = " + point3D2.z);
+    }
+}
