@@ -92,3 +92,20 @@ class Child extends Parent {
 
     void childMethod(int i) {} // 오버로딩 (매개변수 type)
 }
+
+// #4. 참조변수-super
+class Parent2 {
+    // 조상클래스 -> 멤버(인스턴스)변수
+    int x = 10;
+}
+
+class Child2 extends Parent2 {
+    // 자손클래스 -> 멤버(인스턴스)변수
+    int x = 20;
+
+    void method() {
+        System.out.println("x = " + x);
+        System.out.println("this.x = " + this.x); // class내 자기자신
+        System.out.println("super.x = " + super.x); // 조상class 멤버변수
+    }
+}
