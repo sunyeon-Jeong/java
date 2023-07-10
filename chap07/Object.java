@@ -109,3 +109,12 @@ class Child2 extends Parent2 {
         System.out.println("super.x = " + super.x); // 조상class 멤버변수
     }
 }
+
+class Object3 {
+    public static void main(String[] args) {
+        // 객체생성
+        Child2 child2 = new Child2();
+        // 메서드실행
+        child2.method();
+    }
+}
