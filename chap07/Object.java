@@ -1,3 +1,6 @@
+import static java.lang.System.out;
+import static java.lang.Math.*;
+
 //  객체지향②
 // #1. 상속
 // 조상클래스
@@ -147,5 +150,16 @@ class Object4 {
         // 객체생성
         Point3D2 point3D2 = new Point3D2(1, 2, 3);
         System.out.println("x = " + point3D2.x + ", y = " + point3D2.y + ", z = " + point3D2.z);
+    }
+}
+
+// #6. static import문
+class Object5 {
+    public static void main(String[] args) {
+        // System.out.println(Math.random());
+        out.println(random());
+
+        // System.out.println("Math.PI : " + Math.PI);
+        out.println("Math.PI : " + PI);
     }
 }
