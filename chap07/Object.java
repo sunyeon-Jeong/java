@@ -213,3 +213,15 @@ class Object6 {
         System.out.println("capsule.getName() = " + capsule.getName());
     }
 }
+
+// #8. 다형성
+class Mammalia {
+    // 포유류는 새끼를 낳고 수유를 한다
+    public void giveFeed() {
+        System.out.println("모유수유를 합니다");
+    }
+
+    public void giveBirth() {
+        System.out.println("새끼를 낳습니다");
+    }
+}
