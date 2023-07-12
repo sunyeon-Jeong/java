@@ -163,3 +163,33 @@ class Object5 {
         out.println("Math.PI : " + PI);
     }
 }
+
+// #7. 캡슐화
+class Capsule {
+    // 멤버(인스턴스)변수 -> private 선언
+    private int age;
+    private String name;
+
+    // 접근제한없는 메서드 -> 멤버(인스턴스)변수 간접적접근 유도
+    public int getAge() { // 값 읽는 getter
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setAge(int age) { // 값 변경하는 setter
+        this.age = age;
+    }
+
+    // 공백확인(조건, 유효성검사)메서드
+    // Capsule 클래스 내에서만 사용 -> private 선언
+    private boolean checkName(String name) {
+        return name.length() > 0; // 만족하면 True 반환
+    }
+
+    public void setName(String name) {
+        this.name = checkName(name) ? name : "Null";
+    }
+}
