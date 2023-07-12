@@ -1,5 +1,5 @@
-import static java.lang.System.out;
-import static java.lang.Math.*;
+// import static java.lang.System.out;
+// import static java.lang.Math.*;
 
 //  객체지향②
 // #1. 상속
@@ -157,10 +157,10 @@ class Object4 {
 class Object5 {
     public static void main(String[] args) {
         // System.out.println(Math.random());
-        out.println(random());
+        // out.println(random());
 
         // System.out.println("Math.PI : " + Math.PI);
-        out.println("Math.PI : " + PI);
+        // out.println("Math.PI : " + PI);
     }
 }
 
@@ -191,5 +191,25 @@ class Capsule {
 
     public void setName(String name) {
         this.name = checkName(name) ? name : "Null";
+    }
+}
+
+class Object6 {
+    public static void main(String[] args) {
+        // 객체생성
+        Capsule capsule = new Capsule();
+        // capsule.age; -> private라서 접근불가
+        // capsule.name; -> private라서 접근불가
+        // 직접접근이 아닌, 간접접근으로 해결 "메서드를 통한 접근"
+
+        capsule.setAge(22);
+        capsule.setName("mallang");
+
+        System.out.println("capsule.getName() = " + capsule.getName());
+        System.out.println("capsule.getAge() = " + capsule.getAge());
+
+        // 유효성검사 예외
+        capsule.setName("");
+        System.out.println("capsule.getName() = " + capsule.getName());
     }
 }
