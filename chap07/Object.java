@@ -225,3 +225,23 @@ class Mammalia {
         System.out.println("새끼를 낳습니다");
     }
 }
+
+class Whale extends Mammalia {
+    // 고래는 포유류이면서 바다에 살며 수영이 가능하다
+
+    // 자손클래스 메서드
+    public void swimming() {
+        System.out.println("수영을 합니다");
+    }
+
+    // 조상클래스(상속받은) 메서드 오버라이딩
+    @Override
+    public void giveFeed() {
+        System.out.println("고래는 모유수유를 합니다");
+    }
+
+    @Override
+    public void giveBirth() {
+        System.out.println("고래는 새끼를 낳습니다");
+    }
+}
