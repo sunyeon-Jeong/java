@@ -245,3 +245,14 @@ class Whale extends Mammalia {
         System.out.println("고래는 새끼를 낳습니다");
     }
 }
+
+class Object7 {
+    public static void main(String[] args) {
+        // 조상타입 참조변수 -> 자손타입 인스턴스참조 가능
+        Mammalia mammalia = new Whale();
+
+        // 조상클래스로부터 상속받은 멤버만 사용가능
+        mammalia.giveFeed();
+        mammalia.giveBirth();
+    }
+}
