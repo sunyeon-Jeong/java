@@ -14,7 +14,7 @@
 |chap06|객체지향①(Object-oriented Programming)|
 |chap07|객체지향②(Object-oriented Programming)|
 
-### 3️⃣ Contect me
+### 3️⃣ Contect
 💌 Blog (https://velog.io/@mallang)
 
 💌 E-mail (sunyeon4012@gmail.com)
