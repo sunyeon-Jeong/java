@@ -295,3 +295,15 @@ class Dropship extends Unit {
     void load() {/* 선택 대상 태움 */}
     void unload() {/* 선택 대상 내림 */}
 }
+
+class Object8 {
+    public static void main(String[] args) {
+        // 공통조상 Unit 클래스 type 객체배열
+        Unit[] group = {new Marine(), new Tank(), new Dropship()};
+
+        // 객체배열 -> 메서드 실행
+        for (int i = 0; i < group.length; i++) {
+            group[i].move(100, 200);
+        }
+    }
+}
