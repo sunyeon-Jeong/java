@@ -256,3 +256,42 @@ class Object7 {
         mammalia.giveBirth();
     }
 }
+
+// #9. 추상클래스
+abstract class Unit {
+    // 멤버(인스턴스)변수
+    int x, y;
+
+    // 추상메서드
+    abstract void move(int x, int y);
+
+    // 일반메서드
+    void stop() {/* 현재 위치 정지 */}
+}
+
+class Marine extends Unit {
+    // 추상메서드 오버라이딩
+    void move(int x, int y) {
+        System.out.println("Marine[x = " + x + ", y = " + y + "]");
+    }
+
+    void stimPack() {/* 스팀팩을 사용 */}
+}
+
+class Tank extends Unit {
+    // 추상메서드 오버라이딩
+    void move(int x, int y) {
+        System.out.println("Tank[x = " + x + ", y = " + y + "]");
+    }
+
+    void changeMode() {/* 공격모드 변환 */}
+}
+
+class Dropship extends Unit {
+    void move(int x, int y) {
+        System.out.println("Dropship[x = " + x + ", y = " + y + "]");
+    }
+
+    void load() {/* 선택 대상 태움 */}
+    void unload() {/* 선택 대상 내림 */}
+}
